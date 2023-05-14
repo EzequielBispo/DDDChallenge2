@@ -1,14 +1,27 @@
 package pkg.rebocAI;
+import java.util.Scanner;
 
 public class Segurado {
-	public Segurado(String nomeSegurado, String documento) {
-		this.nomeSegurado = nomeSegurado;
-		this.documento = documento;
-	}
+	
+	public static void main(String[] args) {
 	String nomeSegurado;
 	String documento;
+	Segurado.abrirChamado();
+	
+	}
+	static void abrirChamado() {
+		Scanner Leitor = new Scanner(System.in);
+		
+		System.out.println("Insira a placa do Veiculo:");
+		Veiculo.placa = Leitor.next();
+		
+		System.out.println("Insira o chassi do Veiculo:");
+		Veiculo.chassi = Leitor.next();
+		
+		Chamado.retornarInformacoes();
 
-	void abrirChamado() {
-		//fazer o metodo funcionar faz favo
+	}
+	static void editarChamado() {
+		//alguem me explica como isso aqui vai funcionar plmd ass: ezequi
 	}
 }

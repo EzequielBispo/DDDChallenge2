@@ -2,13 +2,13 @@ package pkg.rebocAI;
 
 public class Chamado {
 
-	public static void main(String[] args) {
-		String nome;
-		String dataHora;
-		String nomeVeiculo;
-		
+	Chamado(String dataHora, String nomeVeiculo) {
+		this.String dataHora;
+		this.String nomeVeiculo;
 	}
-	void retornarInformacoes() {
+	static void retornarInformacoes() {
+		System.out.println("Essas são as informações do seu chamado:");
+		System.out.printf(Chamado);
 		
 	}
 }
