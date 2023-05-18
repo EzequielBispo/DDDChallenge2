@@ -1,8 +1,9 @@
 package pkg.rebocAI;
 
 public class Local {
-	String endereco;
-	int numero;
-	int cep;
+	static String endereco;
+	static String numero;
+	static String bairro;
+	static String cep;
 
 }

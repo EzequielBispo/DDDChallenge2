@@ -7,7 +7,6 @@ public class Segurado {
 	String nomeSegurado;
 	String documento;
 	Segurado.abrirChamado();
-	
 	}
 	static void abrirChamado() {
 		Scanner Leitor = new Scanner(System.in);
