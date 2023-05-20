@@ -7,9 +7,9 @@ public class Chamado {
 	static void retornarInformacoes() {
 		System.out.println("Essas são as informações do seu chamado:");
 		System.out.println(HoraAtual);
-		System.out.println(Veiculo.nomeVeiculo);
-		System.out.println(Veiculo.placa);
-		System.out.println(Local.endereco + ", " + Local.numero + " - " + Local.bairro);
+		System.out.println("Nome: " + Segurado.nomeSegurado);
+		System.out.println("CPF: " + Segurado.cpf);
+		System.out.println("Endereço: " + Local.rua + ", " + Local.numero + " - " + Local.bairro);
 		
 	}
 }
