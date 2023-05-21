@@ -21,6 +21,14 @@ public class Chamado {
 		System.out.println("Placa: " + Veiculo.getPlaca());
 		System.out.println("Chassi: " + Veiculo.getChassi());
 		System.out.println("Peso: " + Veiculo.getPeso());
+		System.out.println("Altura: " + Veiculo.getAltura());
+		
+		System.out.println("----------------------------------------------");
+		
+		System.out.println("Essas são as informações da carga:");
+		System.out.println("Peso da carga: " + Carga.getTipoCarga());
+		System.out.println("Tipo de carga: " + Carga.getPesoCarga());
+		
 	}
 
 }

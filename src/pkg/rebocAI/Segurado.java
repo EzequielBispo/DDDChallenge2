@@ -17,8 +17,8 @@ public class Segurado {
 	
 	static void abrirChamado() {
 		Scanner Leitor = new Scanner(System.in);
-		Segurado UmSegurado = new Segurado(cpf, nomeSegurado);
-		Veiculo UmVeiculo = new Veiculo("", 0, 0, "", 0, "", 0, "");
+		Segurado UmSegurado = new Segurado("Ezequiel Bispo", "");
+		Veiculo UmVeiculo = new Veiculo("Onix", 2015, 10.5, "609F-10", 1.23, "4983275983279587");
 		Local UmLocal = new Local();
 		
 		System.out.println("Insira seu CPF:");

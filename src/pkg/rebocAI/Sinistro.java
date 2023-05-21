@@ -1,13 +1,15 @@
 package pkg.rebocAI;
+import java.util.List;
+import java.util.ArrayList;
+
 
 public class Sinistro {
-	private String tipoDeSinistro;
-
-	String getTipoDeSinistro() {
-		return tipoDeSinistro;
+	
+	public static String getTiposDeSinistro() {
+		return tiposDeSinistro;
 	}
 
-	void setTipoDeSinistro(String tipoDeSinistro) {
-		this.tipoDeSinistro = tipoDeSinistro;
+	void setTipoDeSinistro(String tiposDeSinistro) {
+		this.tiposDeSinistro = tiposDeSinistro;
 	}
 }

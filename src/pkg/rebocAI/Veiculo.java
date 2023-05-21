@@ -7,18 +7,14 @@ public class Veiculo {
 	static String placa;
 	static double altura;
 	static String chassi;
-	static float cargaVeiculo;
-	static String tipoCarga;
 	
-	Veiculo(String nomeVeiculo, int ano, double peso, String placa, double altura, String chassi, float cargaVeiculo, String tipoCarga) {
+	Veiculo(String nomeVeiculo, int ano, double peso, String placa, double altura, String chassi) {
 		Veiculo.nomeVeiculo = nomeVeiculo;
 		Veiculo.ano = ano;
 		Veiculo.peso = peso;
 		Veiculo.placa = placa;
 		Veiculo.altura = altura;
 		Veiculo.chassi = chassi;
-		Veiculo.cargaVeiculo = cargaVeiculo;
-		Veiculo.tipoCarga = tipoCarga;
 	}
 	
 	public String getPlaca(String placa) {
@@ -57,18 +53,6 @@ public class Veiculo {
 	}
 	public static void setChassi(String chassi) {
 		Veiculo.chassi = chassi;
-	}
-	public static float getCargaVeiculo() {
-		return cargaVeiculo;
-	}
-	public static void setCargaVeiculo(float cargaVeiculo) {
-		Veiculo.cargaVeiculo = cargaVeiculo;
-	}
-	public static String getTipoCarga() {
-		return tipoCarga;
-	}
-	public static void setTipoCarga(String tipoCarga) {
-		Veiculo.tipoCarga = tipoCarga;
 	}
 	public static String getPlaca() {
 		return placa;
