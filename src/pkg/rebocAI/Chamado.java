@@ -9,18 +9,18 @@ public class Chamado {
 		
 		System.out.println("Essas são as informações do seu chamado:");
 		System.out.println("Horário: " + HoraAtual);
-		System.out.println("Nome: " + Segurado.nomeSegurado);
-		System.out.println("CPF: " + Segurado.cpf);
-		System.out.println("Endereço: " + Local.rua + ", " + Local.numero + " - " + Local.bairro);
+		System.out.println("Nome: " + Segurado.getNomeSegurado());
+		System.out.println("CPF: " + Segurado.getCpf());
+		System.out.println("Endereço: " + Local.getRua() + ", " + Local.getNumero() + " - " + Local.getBairro());
 		
 		System.out.println("----------------------------------------------");
 		
 		System.out.println("Essas são as informações do seu veículo:");
-		System.out.println("Nome: " + Veiculo.nomeVeiculo);
-		System.out.println("Ano: " + Veiculo.ano);
-		System.out.println("Placa: " + Veiculo.placa);
-		System.out.println("Chassi: " + Veiculo.chassi);
-		System.out.println("Peso: " + Veiculo.peso);
+		System.out.println("Nome: " + Veiculo.getNomeVeiculo());
+		System.out.println("Ano: " + Veiculo.getAno());
+		System.out.println("Placa: " + Veiculo.getPlaca());
+		System.out.println("Chassi: " + Veiculo.getChassi());
+		System.out.println("Peso: " + Veiculo.getPeso());
 	}
 
 }

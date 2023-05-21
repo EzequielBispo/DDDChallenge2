@@ -7,45 +7,58 @@ public class Segurado {
 	static String cpf;
 	
 	public Segurado(String nomeSegurado, String cpf) {
-		this.nomeSegurado = nomeSegurado;
-		this.cpf = cpf;
+		Segurado.nomeSegurado = nomeSegurado;
+		Segurado.cpf = cpf;
 	}
 	
-	
 	public static void main(String[] args) {
-	Segurado.abrirChamado();	
+	Segurado.abrirChamado();
 	}
 	
 	static void abrirChamado() {
 		Scanner Leitor = new Scanner(System.in);
+		Segurado UmSegurado = new Segurado(cpf, nomeSegurado);
+		Veiculo UmVeiculo = new Veiculo("", 0, 0, "", 0, "", 0, "");
+		Local UmLocal = new Local();
 		
 		System.out.println("Insira seu CPF:");
-		Segurado.cpf = Leitor.nextLine();
+		UmSegurado.setCpf(Leitor.nextLine());
 		
 		System.out.println("Insira a placa do Veiculo:");
-		Veiculo.placa = Leitor.nextLine();
-		
+		UmVeiculo.setPlaca(Leitor.nextLine());
+
 		if (Segurado.nomeSegurado == null) {
 			System.out.println("Insira seu nome:");
-			Segurado.nomeSegurado = Leitor.nextLine();
+			UmSegurado.setNomeSegurado(Leitor.nextLine());
 		} else {
 			System.out.println("deu else");
 		}
 		
 		System.out.println("Qual é o seu endereço? Insira o nome da rua:");
-		Local.rua = Leitor.nextLine();
+		Local.setRua(Leitor.nextLine());
 		
 		System.out.println("Qual é o número?:");
-		Local.numero = Leitor.nextLine();
+		Local.setNumero(Leitor.nextLine());
 		
 		System.out.println("Qual é o bairro?:");
-		Local.bairro = Leitor.nextLine();
+		Local.setBairro(Leitor.nextLine());
 		
 		System.out.println("Qual é o cep?:");
-		Local.cep = Leitor.nextLine();
+		Local.setCep(Leitor.nextLine());
 		
 		Chamado.retornarInformacoes();
 
 	}
-
+	public static void setCpf(String cpf) {
+		Segurado.cpf = cpf;
+	}
+	public static String getCpf() {
+		return cpf;
+	}
+	public static String getNomeSegurado() {
+		return nomeSegurado;
+	}
+	public static void setNomeSegurado(String nomeSegurado) {
+		Segurado.nomeSegurado = nomeSegurado;
+	}
 }
