@@ -1,4 +1,4 @@
-package pkg.rebocAI;
+package beans;
 import java.util.List;
 import java.util.ArrayList;
 

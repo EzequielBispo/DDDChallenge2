@@ -1,4 +1,4 @@
-package pkg.rebocAI;
+package beans;
 
 public class Local {
 	static String rua;

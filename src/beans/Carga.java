@@ -1,4 +1,4 @@
-package pkg.rebocAI;
+package beans;
 
 public class Carga extends Veiculo {
 	static float pesoCarga;

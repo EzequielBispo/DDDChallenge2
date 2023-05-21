@@ -1,10 +1,12 @@
-package pkg.rebocAI;
+package beans;
 import java.util.*;
+
+import main.Segurado;
 
 public class Chamado {
 	static Date HoraAtual = new Date();
 	
-	static void retornarInformacoes() {
+	public static void retornarInformacoes() {
 		System.out.println("----------------------------------------------");
 		
 		System.out.println("Essas são as informações do seu chamado:");

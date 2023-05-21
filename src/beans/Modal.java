@@ -1,4 +1,4 @@
-package pkg.rebocAI;
+package beans;
 
 public class Modal {
 	private String tipoModal;

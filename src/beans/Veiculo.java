@@ -1,4 +1,4 @@
-package pkg.rebocAI;
+package beans;
 
 public class Veiculo {
 	static String nomeVeiculo;
@@ -8,7 +8,7 @@ public class Veiculo {
 	static double altura;
 	static String chassi;
 	
-	Veiculo(String nomeVeiculo, int ano, double peso, String placa, double altura, String chassi) {
+	public Veiculo(String nomeVeiculo, int ano, double peso, String placa, double altura, String chassi) {
 		Veiculo.nomeVeiculo = nomeVeiculo;
 		Veiculo.ano = ano;
 		Veiculo.peso = peso;
@@ -21,7 +21,7 @@ public class Veiculo {
 		System.out.println(placa);
 		return placa;
 	}
-	public void setPlaca(String placa) {
+	public static void setPlaca(String placa) {
 		Veiculo.placa = placa;
 	}
 	public static String getNomeVeiculo() {
