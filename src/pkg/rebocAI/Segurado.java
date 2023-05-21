@@ -13,16 +13,24 @@ public class Segurado {
 	
 	
 	public static void main(String[] args) {
-	Segurado.abrirChamado();
+	Segurado.abrirChamado();	
 	}
+	
 	static void abrirChamado() {
 		Scanner Leitor = new Scanner(System.in);
+		
+		System.out.println("Insira seu CPF:");
+		Segurado.cpf = Leitor.nextLine();
 		
 		System.out.println("Insira a placa do Veiculo:");
 		Veiculo.placa = Leitor.nextLine();
 		
-		System.out.println("Insira seu CPF:");
-		Segurado.cpf = Leitor.nextLine();
+		if (Segurado.nomeSegurado == null) {
+			System.out.println("Insira seu nome:");
+			Segurado.nomeSegurado = Leitor.nextLine();
+		} else {
+			System.out.println("deu else");
+		}
 		
 		System.out.println("Qual é o seu endereço? Insira o nome da rua:");
 		Local.rua = Leitor.nextLine();
@@ -39,7 +47,5 @@ public class Segurado {
 		Chamado.retornarInformacoes();
 
 	}
-	static void editarChamado() {
-		//alguem me explica como isso aqui vai funcionar plmd ass: ezequi
-	}
+
 }
