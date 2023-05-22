@@ -4,6 +4,7 @@ import java.util.Scanner;
 import beans.Carga;
 import beans.Chamado;
 import beans.Local;
+import beans.Sinistro;
 import beans.Veiculo;
 
 public class Segurado {
@@ -23,39 +24,61 @@ public class Segurado {
 	static void abrirChamado() {
 		Scanner Leitor = new Scanner(System.in);
 		
-		Segurado UmSegurado = new Segurado("Ezequiel Bispo", "");
-		Veiculo UmVeiculo = new Veiculo("Onix", 2015, 10.5, "", 1.23, "4983275983279587");
-		Carga UmaCarga = new Carga("", 0, 2.5, "Arroz", 0, "", 0, "");
+		Segurado UmSegurado = new Segurado("", "");
+		Veiculo UmVeiculo = new Veiculo("", 0, 0, "", 0, "");
+		Sinistro UmSinistro = new Sinistro("", "");
+		Carga UmaCarga = new Carga("", 0, 0, "", 0, "", "", "");
 		Local UmLocal = new Local();
 		
-		if (Segurado.getCpf() == "") {
+		UmVeiculo.setNomeVeiculo("Onix");
+		UmVeiculo.setAno(2015);
+		UmVeiculo.setPeso(2.7);
+		UmVeiculo.setAltura(1.43);
+		UmVeiculo.setChassi("948728759873");
+		
+		UmaCarga.setPesoCarga(65.3);
+		
+		
+		
+		if (UmSegurado.getCpf() == "") {
 			System.out.println("Insira seu CPF:");
-			Segurado.setCpf(Leitor.nextLine());
+			UmSegurado.setCpf(Leitor.nextLine());
 		}
 		
-		if (Veiculo.getPlaca() == "") {
+		if (UmSinistro.getSinistroEscolhido() == "") {
+			System.out.println("Digite o número de acordo com a sua situação:");
+			UmSinistro.setDigitoSinistro(Leitor.nextLine());
+			UmSinistro.escolhaSinistro();
+		}
+		
+		if (UmVeiculo.getPlaca() == "") {
 			System.out.println("Insira a placa do Veiculo:");
-			Veiculo.setPlaca(Leitor.nextLine());
+			UmVeiculo.setPlaca(Leitor.nextLine());
 		}
-	
-		if (Local.getRua() == null) {
+		
+		if (UmaCarga.getPesoCarga() == "") {
+			System.out.println("Insira o peso da carga:");
+			UmaCarga.setPesoCarga(Leitor.nextLine());
+		}
+		
+		if (UmLocal.getRua() == null) {
 			System.out.println("Qual é o seu endereço? Insira o nome da rua:");
-			Local.setRua(Leitor.nextLine());
+			UmLocal.setRua(Leitor.nextLine());
 		}
 		
-		if (Local.getNumero() == null) {
+		if (UmLocal.getNumero() == null) {
 			System.out.println("Qual é o número?:");
-			Local.setNumero(Leitor.nextLine());
+			UmLocal.setNumero(Leitor.nextLine());
 		}
 		
-		if (Local.getBairro() == null) {
+		if (UmLocal.getBairro() == null) {
 			System.out.println("Qual é o bairro?:");
-			Local.setBairro(Leitor.nextLine());
+			UmLocal.setBairro(Leitor.nextLine());
 		}
 		
-		if (Local.getCep() == null) {
+		if (UmLocal.getCep() == null) {
 			System.out.println("Qual é o cep?:");
-			Local.setCep(Leitor.nextLine());
+			UmLocal.setCep(Leitor.nextLine());
 		}
 		
 		Chamado.retornarInformacoes();

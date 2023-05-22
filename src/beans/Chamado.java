@@ -13,6 +13,7 @@ public class Chamado {
 		System.out.println("Horário: " + HoraAtual);
 		System.out.println("Nome: " + Segurado.getNomeSegurado());
 		System.out.println("CPF: " + Segurado.getCpf());
+		System.out.println("Sinistro: " + Sinistro.getSinistroEscolhido());
 		System.out.println("Endereço: " + Local.getRua() + ", " + Local.getNumero() + " - " + Local.getBairro());
 		
 		System.out.println("----------------------------------------------");

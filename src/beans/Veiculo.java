@@ -18,7 +18,6 @@ public class Veiculo {
 	}
 	
 	public String getPlaca(String placa) {
-		System.out.println(placa);
 		return placa;
 	}
 	public static void setPlaca(String placa) {
