@@ -36,7 +36,8 @@ public class Segurado {
 		UmVeiculo.setAltura(1.43);
 		UmVeiculo.setChassi("948728759873");
 		
-		UmaCarga.setPesoCarga(65.3);
+		UmaCarga.setPesoCarga("68.3");
+		UmaCarga.setTipoCarga("Arroz");
 		
 		
 		
@@ -46,7 +47,7 @@ public class Segurado {
 		}
 		
 		if (UmSinistro.getSinistroEscolhido() == "") {
-			System.out.println("Digite o número de acordo com a sua situação:");
+			System.out.println("Digite o número de acordo com a sua situação:\n[1]Batida [2]Pane Elétrica [3]Desastres Naturais");
 			UmSinistro.setDigitoSinistro(Leitor.nextLine());
 			UmSinistro.escolhaSinistro();
 		}

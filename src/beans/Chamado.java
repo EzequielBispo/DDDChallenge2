@@ -32,6 +32,10 @@ public class Chamado {
 		System.out.println("Peso da carga: " + Carga.getTipoCarga());
 		System.out.println("Tipo de carga: " + Carga.getPesoCarga());
 		
+		System.out.println("----------------------------------------------");
+		IA.selecionarModal();
+		System.out.println("Modal determinado: " + IA.getModalSelecionado());
+		
 	}
 
 }

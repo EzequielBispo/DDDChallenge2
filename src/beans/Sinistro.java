@@ -27,7 +27,7 @@ public class Sinistro {
 		this.sinistroEscolhido = sinistroEscolhido;
 	}
 	
-	public String getDigitoSinistro() {
+	public static String getDigitoSinistro() {
 		return digitoSinistro;
 	}
 
